@@ -1,0 +1,66 @@
+---
+layout: launch
+---
+
+<div class="lvl-14">
+<div class="unit unit-l-1">
+<div class="className">
+	<img src="img/logo-level14-white.png" class="logo-img">
+
+
+<div class="time-wrapper">
+	<div class="clock"></div>
+</div>
+
+<div class="info">
+<h2>Join us for our website reveal.</h2>
+
+<p><strong>Lunenburg Pub & Bar</strong></p>
+<p>Thursday, March 13th, 6pm</p>
+<p>14 Waller St, Ottawa, ON K1N 9C4</p></div>
+</div>
+
+<div class="social-footer">
+		<a class="links social1" href="https://twitter.com/Level__14" target="_blank"></a>
+		<a class="links social2" href="https://www.facebook.com/pages/LEVEL-14/263392680482280" target="_blank"></a>
+	</div>
+
+
+<!-- <a class="tw" href="https://www.facebook.com/pages/LEVEL-14/263392680482280?ref=br_tf"><img class="unit-spacer smicon" src="img/social-media/facebook.png" alt="twicon"></a>
+<a class="tw" href="https://twitter.com/Level__14"><img class="unit-spacer smicon" src="img/social-media/twitter.png" alt="twicon"></a>
+<a class="vm" href="http://vimeo.com/level14"><img class="unit-spacer smicon" src="img/social-media/twitter.png" alt="vmicon"></a> --><!--Add real icon-->
+
+</div>
+
+</div>
+
+
+<div class="social-footer">
+		<div class="links-outer"><a class="links social1" href="https://twitter.com/Level__14" target="_blank"></a>
+		<a class="links social2" href="https://www.facebook.com/pages/LEVEL-14/263392680482280" target="_blank"></a>
+		</div>
+</div>
+
+
+
+
+	<script type="text/javascript">
+			var clock;
+
+			$(document).ready(function() {
+				// Grab the current date
+				var currentDate = new Date();
+
+				// Set some date in the future. In this case, it's always Jan 1
+				var futureDate  = new Date(2014, 2, 13, 17);
+
+				// Calculate the difference in seconds between the future and current date
+				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+				// Instantiate a coutdown FlipClock
+				clock = $('.clock').FlipClock(diff, {
+					clockFace: 'DailyCounter',
+					countdown: true
+				});
+			});
+		</script>
